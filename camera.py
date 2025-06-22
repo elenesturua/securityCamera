@@ -51,8 +51,8 @@ while True:
         out.write(frame)
     
 
-   # for (x, y, width, height) in faces:
-    #    cv2.rectangle(frame, (x, y), (x+width, y+height), (0, 0, 255), 3) # frame, top left corner, bottom right corner, BGR color, thickness
+    for (x, y, width, height) in faces:
+        cv2.rectangle(frame, (x, y), (x+width, y+height), (0, 0, 255), 3) # frame, top left corner, bottom right corner, BGR color, thickness
 
   
     cv2.imshow("Camera", frame)
